@@ -89,10 +89,10 @@ module.exports = {
       ).select('-__v');
 
       if (!thought) {
-        return res.status(404).json({ message: 'No thought found with that ID :(' });
+        return res.status(404).json({ message: 'No thought found with that ID' });
       }
 
-      return res.json([ { message: 'The reaction was added successfully! 🤓' }, thought ]);
+      return res.json([ { message: 'The reaction was added successfully!' }, thought ]);
     } catch (err) {
       return res.status(500).json(err);
     }
@@ -108,7 +108,7 @@ module.exports = {
       );
 
       if (!thought) {
-        return res.status(404).json({ message: 'No thought found with that ID :(' });
+        return res.status(404).json({ message: 'No thought found with that ID' });
       }
 
       const updatedThought = await Thought.findOne({ _id: req.params.thoughtId })

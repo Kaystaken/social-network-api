@@ -48,7 +48,7 @@ module.exports = {
         { runValidators: true, new: true }
       );
       const updatedUser = await User.findOne({ _id: req.params.userId }).select('-__v');      
-      res.json([{ message: 'User Updated successfully! 🤓' }, updatedUser]);
+      res.json([{ message: 'User Updated successfully!' }, updatedUser]);
     } catch (err) {
       res.status(500).json(err);
     }
@@ -63,7 +63,7 @@ module.exports = {
         return res.status(404).json({ message: 'No such user exists' });
       }
 
-      return res.json({ message: 'user successfully deleted' });
+      return res.json({ message: 'User successfully deleted' });
     } catch (err) {
       console.log(err);
       return res.status(500).json(err);
@@ -80,7 +80,7 @@ module.exports = {
       );
 
       if (!user) {
-        return res.status(404).json({ message: 'No user found with that ID :(' });
+        return res.status(404).json({ message: 'No user found with that ID' });
       }
 
       return res.json(user);
@@ -99,7 +99,7 @@ module.exports = {
       );
 
       if (!user) {
-        return res.status(404).json({ message: 'No user found with that ID :(' });
+        return res.status(404).json({ message: 'No user found with that ID' });
       }
 
       return res.json(user);

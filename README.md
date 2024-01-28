@@ -11,13 +11,11 @@ As a social media startup I'd like an API for my social network that uses a NoSQ
 So that my website can handle large amounts of unstructured data
 
 
-## Installation
+## Links
+ 
+ Video:
 
-
-
-## Usage
-
-
+ Repo: https://github.com/Kaystaken/social-network-api
 
 ## Credits
 
