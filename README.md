@@ -13,7 +13,7 @@ So that my website can handle large amounts of unstructured data
 
 ## Links
  
- Video:
+ Video: https://drive.google.com/file/d/1HKo9TZrxrP481S5sGEReFOCqjxkSmufn/view?usp=sharing
 
  Repo: https://github.com/Kaystaken/social-network-api
 
